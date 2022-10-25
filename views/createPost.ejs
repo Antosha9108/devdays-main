@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include ('partials/head') %>
+<%-include ('partials/header') %>
+<a href="/blogPost"><i id='backButton' class="fa fa-arrow-left"></i></a>
+<body>
+    <section>
+    <h1>Create New Post </h1>
+    <form action="/blogPost/createBlogPost" method="POST">
+        <div id="mainInput">
+            <label for="title">Title</label><input id="title" name="title" required placeholder="">
+            <h3 id="date" name="date">
+                <%= new Date().toLocaleString('en-us',{ 
+                                                        weekday:"long", 
+                                                        year:"numeric", 
+                                                        month:"short", 
+                                                        day:"numeric"}) %></h3>
+            <label for="area">Your Thoughts:</label><textarea id="postBody" name="postBody" rows="20" cols="50" required placeholder="Write your daily dev journey here!"></textarea>
+        </div>
+        <div>
+            <label for="gitHub">GitHub Link</label><input id="gitHub" name="gitHub" placeholder="GitHub Link">
+            <label for="dueDate">Due Date</label><input id="dueDate" type='date' name="dueDate" placeholder="Due Date">
+            <label for="mood">Mood: </label><select id="mood" name="mood">
+                <option>Great &#128170</option>
+                <option>Good  &#128522</option>
+                <option>Spicy &#129324</option>
+                <option>Baddie &#128526</option>
+                <option>Overwhelmed &#128532</option>
+                <option>Trough Of Sorrow &#128555</option>
+
+
+            </select>
+        </div>
+        
+        <div id="buttons">
+        <input type="reset" id="clear" class="button-18" value="Clear">
+        <!-- <button id="saveDraft">Save as Draft</button> -->
+        <input type="submit" name="Post" class="button-18" value="Post">
+        </div>
+    </form>
+    </section>
+
+
+    <script src="/js/main.js"></script>
+</body>

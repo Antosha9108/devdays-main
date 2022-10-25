@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include ('partials/head') %>
+    <body>
+        <%-include ('partials/header') %>
+        <ul>
+            <a href="/blogPost"><i id='backButton' class="fa fa-arrow-left"></i></a>
+            <li class='postItem' data-id='<%=blogPost._id%>'>
+                <div class='title'><h4><%= blogPost.title %></h4></div>
+                <div class='body'><%= blogPost.body %></div>
+                <div class='gitHub'><i class="<% if(blogPost.gitHub) { %>fa-brands fa-github <% } %>"></i>
+                    <a href="<% if   (blogPost.gitHub) { %> <%= blogPost.gitHub %> <% } %>"><%= blogPost.gitHub %></a>
+                </div>
+                <div class='date'><%= blogPost.date %></div>
+                <div class='dueDate'><% if(blogPost.dueDate) { %> Due <%= blogPost.dueDate %><% } %></div>
+                <div class="mood">Mood: <%= blogPost.mood %></div>
+                <%-include ('partials/actions') %>
+            </li>
+        </ul>
+        <script src="/js/localdatetime.js"></script>
+        <script src="/js/main.js"></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </body>
+</html>

@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&display=swap');
+
+html {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    background-color: rgb(33 35 38);
+    color: rgb(110, 220, 200);
+    font-size: 1.5em;
+}
+
+a {
+    color: rgb(110, 220, 200);
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    height: 50%;
+}
+
+section {
+    align-self: center;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+label {
+    margin: 0;
+}
+
+/* account header */
+#account {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: end;
+}
+
+#backButton {
+    top: .8em;
+    left: .5em;
+    position: absolute;
+    margin: 1em .5em;
+    font-size: 2em;
+}
+
+/* button base */
+.button-18 {
+    align-items: center;
+    background-color: rgb(110, 220, 200);
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.button-18:hover, .button-18:focus {
+    background-color: gold;
+    color: #ffffff;
+}
+
+.button-18:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
+
+/* ListPosts Buttons */
+#actionsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+}
+#twitter-widget-0 {
+
+}
+#actionsContainer .actionButton {
+    width: 5em;
+    height: 30px;
+    min-height: 20px;
+    margin-right: 20px;
+}
+#actionsContainer #del {
+    background-color: gray;
+}
+#actionsContainer #del:hover {
+    background-color: red;
+}
+ #actionsContainer #twitter-widget-0 {
+    height: 30px ;
+} 
+
+input, textarea {
+    background-color: rgb(92,92,92);
+    color: white;
+    border-color: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: .2em;
+}
+ textarea {
+    padding: .6em;
+ }
+ #buttons {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+ #loginPane {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ #loginTitle {
+    text-align: center;
+    margin-top: -1.5em;
+ }
+
+ body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vw;
+ }
+#loginPane * {
+    margin: .4em auto;
+    font-size: 1em;
+    padding: .4em;
+    width: 80%;
+    display: table;
+} 
+#loginButton {
+    display: table;
+    margin: 0 auto;
+    width: 50%;
+}
+#loginPane form {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+}
+ #loginPane button {
+    font-size: .75em;
+    padding: .5em;
+ }
+ 
+#loginLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ #loginLinks a {
+    display: inline;
+    margin: 0 .5em;
+    text-align: center;
+ }
+
+ .blogPost input {
+    width: 10%;
+ }
+
+ /* #buttons * {
+    width: 25%;
+    background-color: rgb(110,220,200);
+    color: white;
+ } */
+ #clear {
+    background-color: rgb(92,92,92);
+ }
+ #clear:hover {
+    background-color: rgba(0, 0, 0, .08);
+    color: transparent;
+    text-shadow: 0 0 5px rgba(255,255,255,0.5);
+ }
+
+
+
+/*  post titles */
+h4 {
+    font-size: 1.2em;
+    margin: .5em;
+}
+#logo, #biglogo {
+   mix-blend-mode: lighten;
+   transition: all .3s ease-out;
+   margin: -1em 0;
+}
+#logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 1em;
+}
+#biglogo {
+    width: 300px;
+    height: 300px;
+}
+/* each post */
+li {
+    list-style: none;
+    background-color: rgb(22,27,34)	;
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: .5em;
+    margin: 1em 0;
+    position: relative;
+}
+/* posts container */
+ul {
+    margin: 0;
+    padding: 1em;
+    width: 90vw;
+}
+
+li > .title {
+    color: white;
+    margin: 2em .2em 0;
+    max-width: 80%;
+}
+
+li .body {
+    margin: 1em .1em 0;
+    font-size: .8em;
+    color: slategray;
+}
+li .gitHub {
+    margin: 1em 0;
+    font-size: .6em;
+    max-width: 80%;
+}
+
+li .date {
+    top: 5px;
+    right: 10px;
+    position: absolute;
+    font-size: .5em;
+}
+
+li .mood {
+    top: 3.5em;
+    right: 10px;
+    position: absolute;
+    font-size: .8em;
+}
+li .dueDate {
+    top: 1em;
+    right: 10px;
+    position: absolute;
+    font-size: .8em;
+}
+
+
+::placeholder {
+    color: rgba(255,255,255.7)
+}
+
+ select {
+    background-color: slategrey;
+    color: white;
+ }
+
+ h1 {
+    color: rgb(110,220,200);
+    text-align: center;
+ }
+ button {
+    border-radius: 5%;
+ }
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 90vw;
+}
+#account * {
+    font-size: .5rem;
+    margin: 0;
+}
+
+#account h2 {
+    margin-right: 1em;
+}
+
+#username {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#title {
+    font-size: 1.5em;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.not {
+    text-decoration: underline;
+}
+
+#login, #signup {
+   display: flex;
+   justify-content: center;
+}
+
+#signupContainer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    width: 80vw;
+    align-items: center;
+}
+#signupContainer input {
+    font-size: 1em;
+}
+
+/* switches */
